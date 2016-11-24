@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tagrem Code Test</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body id="body">
+    <img src="img/banner.jpg" alt="banner" class="banner">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>In Gravida Libero</h1>
+                <div class="siteInfo">
+                    <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit. Integer enim neque, molestie ut placerat id, tincidunt in sem. Pellentesque sodales lobortis eros nec pulvinar. In ac ultrices ipsum, ultricies semper nisi. Morbi ac hendrerit nulla. Sed nec ex commodo, tincidunt felis ac, iaculis ipsum.</p>
+                    <p>Morbi ac hendrerit nulla. Sed nec ex commodo, tincidunt felis ac, iaculis ipsum</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stateFinder">
+                    <h2>State Finder</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input class="form-control" id="my_input" placeholder="Search Hotels" list="stateList">
+                                <div class="input-group-addon" onclick="statePick()"><img src="img/search.png"></div>
+                            </div>
+                        </div>
+                        <datalist id="stateList">
+                            <option value="">Select</option>
+                            <option value="Alabama"></option>
+                            <option value="Alaska" </option>
+                                <option value="Arizona"></option>
+                                <option value="Arkansas"></option>
+                                <option value="California"></option>
+                                <option value="Colorado"></option>
+                                <option value="Connecticut"></option>
+                                <option value="Delaware"></option>
+                                <option value="District Of Columbia"></option>
+                                <option value="Florida"></option>
+                                <option value="Georgia"></option>
+                                <option value="Hawaii"></option>
+                                <option value="Idaho"></option>
+                                <option value="Illinois"></option>
+                                <option value="Indiana"></option>
+                                <option value="Iowa"></option>
+                                <option value="Kansas"></option>
+                                <option value="Kentucky"></option>
+                                <option value="Louisiana"></option>
+                                <option value="Maine" </option>
+                                    <option value="Maryland"></option>
+                                    <option value="Massachusetts"></option>
+                                    <option value="Michigan"></option>
+                                    <option value="Minnesota"></option>
+                                    <option value="Mississippi"></option>
+                                    <option value="Missouri"></option>
+                                    <option value="Montana"></option>
+                                    <option value="Nebraska"></option>
+                                    <option value="Nevada"></option>
+                                    <option value="New Hampshire"></option>
+                                    <option value="New Jersey"></option>
+                                    <option value="New Mexico"></option>
+                                    <option value="New York"></option>
+                                    <option value="North Carolina"></option>
+                                    <option value="North Dakota"></option>
+                                    <option value="Ohio"></option>
+                                    <option value="Oklahoma"></option>
+                                    <option value="Oregon"></option>
+                                    <option value="Pennsylvania"></option>
+                                    <option value="Rhode Island"></option>
+                                    <option value="South Carolina"></option>
+                                    <option value="South Dakota"></option>
+                                    <option value="Tennessee"></option>
+                                    <option value="Texas"></option>
+                                    <option value="Utah"></option>
+                                    <option value="Vermont"></option>
+                                    <option value="Virginia"></option>
+                                    <option value="Washington"></option>
+                                    <option value="West Virginia"></option>
+                                    <option value="Wisconsin"></option>
+                                    <option value="Wyoming"></option>
+                        </datalist>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="moreInfo">
+            <h2>In Gravida</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Cras ac mauris</h3>
+                    <p>nteger dictum hendrerit pharetra. Cras fermentum posuere egestas.</p>
+                    <a>Learn More<img src="img/arrow-btn-blue.png"></a>
+                </div>
+                <div class="col-md-4">
+                    <h3>Curabitur elementum</h3>
+                    <p>Cras vel imperdiet mauris. Pellentesque libero mauris, interdum a felis et</p>
+                    <a>Learn More<img src="img/arrow-btn-blue.png"></a>
+                </div>
+                <div class="col-md-4">
+                    <h3>Awards and Recognitions</h3>
+                    <p>Aliquam eget ligula mauris. Etiam viverra non turpis eu auctor. Nullam pretium</p>
+                    <a>Learn More<img src="img/arrow-btn-blue.png"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Morbi placerat </h3>
+                    <p> Nam feugiat ultrices ligula eget faucibus. Mauris convallis ipsum est.</p>
+                    <a>Learn More<img src="img/arrow-btn-blue.png"></a>
+                </div>
+                <div class="col-md-4">
+                    <h3>Suspendisse eu</h3>
+                    <p>Duis pretium elementum dui, id feugiat neque facilisis vel.</p>
+                    <a>Learn More<img src="img/arrow-btn-blue.png"></a>
+                </div>
+                <div class="col-md-4">
+                    <h3> Integer faucibus</h3>
+                    <p> Vivamus at rutrum est, eu pellentesque lacus. Curabitur imperdiet tortor si</p>
+                    <a>Learn More<img src="img/arrow-btn-blue.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="productInfo">
+            <div class="row">
+                <div class="col-md-9 col-sm-9 col-xs-5">
+                    <h2>Products</h2>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-7">
+                    <select id="myRange" onchange="filterPricing(value)">
+                        Filter By:
+                        <option value="[0, 9007199254740991]">All</option>
+                        <option value="[0, 500]">Less Than $500</option>
+                        <option value="[500, 1000]">From $500 to $1000</option>
+                        <option value="[1000, 2000]">From $1000 to $2000</option>
+                        <option value="[2000, 9007199254740991]">$2000 or more</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row products">
+                <div class="col-md-3 col-sm-3 col-xs-6" id="firstP">
+                    <p class="pTitle more" id="product1 p-1">Product Title 1</p>
+                    <p class="pPrice">Starting at $400</p>
+                    <img src="img/cereal_b.jpg" alt="cereal" id="p-1" class="cereal more">
+                    <br>
+                    <p class="pDetails">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <br>
+                    <a>Learn More</a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6" id="secondP">
+                    <p class="pTitle more" id="product2 p-2">Product Title 2</p>
+                    <p class="pPrice">Starting at $1900</p>
+                    <img src="img/flower_b.jpg" alt="flower" id="p-2" class="flower more">
+                    <br>
+                    <p class="pDetails">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <br>
+                    <a>Learn More</a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6" id="thirdP">
+                    <p class="pTitle more" id="product3 p-3">Product Title 3</p>
+                    <p class="pPrice">Starting at $2730</p>
+                    <img src="img/machine_b.jpg" alt="machine" id="p-3" class="machine more">
+                    <br>
+                    <p class="pDetails">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <br>
+                    <a>Learn More</a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6" id="fourthP">
+                    <p class="pTitle more" id="product4 p-4">Product Title 4</p>
+                    <p class="pPrice">Starting at $731</p>
+                    <img src="img/candy_b.jpg" alt="candy" id="p-4" class="candy more">
+                    <br>
+                    <p class="pDetails">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <br>
+                    <a>Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div id="selectedProduct" class="row selectedProduct">
+            <!-- Modal content -->
+            <div class="col-xs-12 col-md-12 col-sm-12">
+                <span class="close">x</span>
+                <div id="product-info"></div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>

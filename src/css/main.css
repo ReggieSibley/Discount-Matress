@@ -1,0 +1,296 @@
+/*Default Page Styling*/
+
+body {
+    background-color: #E1E1E1;
+    font-family: 'Lato', sans-serif;
+}
+
+.noScroll {
+    position: relative;
+    overflow: hidden;
+}
+
+.scroll {
+    position: absolute;
+    overflow: scroll;
+}
+
+h1,
+h2,
+h3 {
+    color: #002b5a;
+    margin-bottom: 42px;
+    text-transform: capitalize;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 200;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 200;
+    text-align: center;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.siteInfo {
+    color: #333;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/*Site Images*/
+
+.banner {
+    width: 100%;
+}
+
+.cereal {
+    width: 100%;
+}
+
+.flower {
+    width: 100%;
+}
+
+.machine {
+    width: 100%;
+}
+
+.candy {
+    width: 100%;
+}
+
+
+/*Learn More Section Styling*/
+
+.moreInfo {
+    background-color: #F2F2F2;
+    padding: 10px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+.moreInfo h2,
+h3 {
+    text-align: left;
+    margin-bottom: 5px;
+    padding-top: 30px;
+}
+
+.moreInfo p {
+    font-size: 12px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.moreInfo a {
+    background-color: #ffffff;
+    color: #002b5a;
+    font-size: 14px;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 2px #fff inset;
+    padding: 10px;
+    margin-bottom: 100px;
+    padding-right: 250px;
+    cursor: pointer;
+}
+
+.moreInfo a img {
+    margin-left: 30px;
+}
+
+
+/*State Selection Styling*/
+
+.stateFinder h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.stateFinder p {
+    color: #002b5a;
+    bottom-margin: 5px;
+    font-size: 12px;
+}
+
+.stateFinder {
+    background-color: #EFEFEF;
+    padding: 15px;
+    margin-top: 25px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+.stateFinder img {
+    cursor: pointer;
+}
+
+
+/*Product Styling*/
+
+.pTitle {
+    color: #002b5a;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.pPrice {
+    color: #4987ca;
+    font-size: 13px;
+    margin-top: 0px;
+}
+
+.pDetails {
+    font-size: 13px;
+    color: #666666;
+}
+
+.productInfo a {
+    font-size: 13px;
+    color: #002b5a;
+    cursor: pointer;
+}
+
+.productInfo h2 {
+    text-align: left;
+}
+
+.productInfo {
+    background-color: #F2F2F2;
+    padding: 15px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+.productInfo img {
+    cursor: pointer;
+}
+
+#myRange {
+    margin-top: 27px;
+}
+
+
+/*Styling for the extra details dropdown for products*/
+
+#selectedProduct {
+    background-color: #F2F2F2;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.buyIt {
+    background-color: #0C315D;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Media Queries, Landscape and FullSite */
+
+
+/*Specifies max width for entire applications content*/
+
+@media (min-width: 768px) {
+    .container-fluid {
+        max-width: 960px;
+    }
+}
+
+
+/*afew fixes on tablet devices*/
+
+@media (min-width: 992px) {
+    .moreInfo a {
+        padding-right: 20px;
+    }
+    h1 {
+        text-align: left;
+    }
+}
+
+
+/*adjust the colums in order for portrait to work*/
+
+@media (min-width: 200px) and (orientation:portrait) {
+    .productInfo .col-xs-6 {
+        width: 100%;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+    }
+    .moreInfo a {
+        padding-right: 20px;
+    }
+    .pTitle {
+        margin-top: 50px;
+    }
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
